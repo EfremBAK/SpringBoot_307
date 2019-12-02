@@ -16,10 +16,13 @@ public class HomeController {
         Employee employee = new Employee();
         employee.setName("Stephen Bullock");
         employee.setSsn("555-12-1234");
-        Laptop laptop = new Laptop();
 
+
+        Laptop laptop = new Laptop();
         laptop.setBrand("Dell");
         laptop.setModel("Latitude XL");
+
+
         employee.setLaptop(laptop);
         employeeRepository.save(employee);
 

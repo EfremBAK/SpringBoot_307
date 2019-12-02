@@ -9,14 +9,13 @@
 </head>
 <body>
 
-<h1>
-    Employee List
-</h1>
+<h1>Employee List</h1>
+
 <div th:each = "employee : ${employees}">
     <h2 th:text="${employee.name}"></h2>
     <h6 th:inline="text">identied by [[${employee.ssn}]]</h6>
     <ul>
-        <th:block th:object="${employee.ssn}">
+        <th:block th:object="${employee.laptop}">
             <li th:inline="text">Has been assigned a <b>[[*{brand}]]</b> [[*{model}]].</li>
         </th:block>
     </ul>

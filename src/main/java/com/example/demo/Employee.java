@@ -11,9 +11,10 @@ public class Employee {
     private int id;
     private String name;
     private String ssn;
-
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "laptop_id")
+
+
     private Laptop laptop;
 
     public int getId() {
